@@ -2,11 +2,13 @@
 
 local Data = {}
 
-Data.Profile = "LynXz#5995"
-
 Data.Invite = "https://discord.gg/wX2D4Ea2Y8"
 
 Data.InviteTag = "wX2D4Ea2Y8"
+
+Data.Devs = {
+LynX = "LynXz#5995",
+}
 
 return Data
 
