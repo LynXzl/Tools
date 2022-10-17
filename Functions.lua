@@ -23,12 +23,9 @@ local Functions = {
 	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
 	     if string.lower(string.sub(v.Name, 1, string.len(Text))) == string.lower(Text) then
 		 SelectedPlayer = v
-		 return SelectedPlayer	
 	     end
 	end
-	if SelectedPlayer == "" then
-	     SelectedPlayer = nil
-	end
+	return SelectedPlayer
   end,
 }
 
