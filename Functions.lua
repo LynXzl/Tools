@@ -26,6 +26,9 @@ local Functions = {
 		 return SelectedPlayer	
 	     end
 	end
+	if SelectedPlayer == "" then
+	     SelectedPlayer = nil
+	end
   end,
 }
 
