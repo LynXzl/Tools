@@ -17,6 +17,16 @@ local Functions = {
       		Duration = tostring(NDuration);
     	})
   end,
+  --FindPlayer
+  Find = function(name,Text)
+  	local SelectedPlayer
+	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+	     if string.lower(string.sub(v.Name, 1, string.len(Text))) == string.lower(Text) then
+		 SelectedPlayer = v
+		 return SelectedPlayer	
+	     end
+	end
+  end,
 }
 
 return Functions
