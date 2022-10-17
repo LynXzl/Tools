@@ -10,11 +10,12 @@ local Functions = {
 	end
   end,
   --Notify
-  Notify = function(name,NTitle,NText,NDuration)
+  Notify = function(name,NTitle,NText,NDuration,NIcon)
   	game.StarterGui:SetCore("SendNotification", {
         	Title = NTitle;
        		Text = NText;
       		Duration = tostring(NDuration);
+		Icon = NIcon or nil;
     	})
   end,
   --FindPlayer
