@@ -22,7 +22,7 @@ local Functions = {
   Find = function(name,Text)
   	local SelectedPlayer
 	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-	     if string.lower(string.sub(v.Name, 1, string.len(Text))) == string.lower(Text) then
+	     if string.lower(string.sub(v.Name, 1, string.len(Text))) == string.lower(Text) or string.lower(string.sub(v.DisplayName, 1, string.len(Text))) == string.lower(Text) then
 		 SelectedPlayer = v
 	     end
 	end
