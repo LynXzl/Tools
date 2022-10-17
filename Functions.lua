@@ -26,7 +26,9 @@ local Functions = {
 		 SelectedPlayer = v
 	     end
 	end
-	return SelectedPlayer
+	if SelectedPlayer then
+	     return SelectedPlayer
+	end
   end,
 }
 
