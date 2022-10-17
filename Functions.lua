@@ -2,20 +2,20 @@
 
 local Functions = {
   --Fires TouchInterest
-	Touch = function(name,Part)
-		if Part then
-			firetouchinterest(Part,game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart"),0)
-      wait()
-      firetouchinterest(Part,game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart"),1)
-		end
-	end,
+  Touch = function(name,Part)
+       if Part then
+	        firetouchinterest(Part,game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart"),0)
+         	wait()
+        	firetouchinterest(Part,game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart"),1)
+	end
+  end,
   --Notify
   Notify = function(name,NTitle,NText,NDuration)
-    game.StarterGui:SetCore("SendNotification", {
-      Title = NTitle;
-      Text = NText;
-      Duration = tostring(NDuration);
-    })
+  	game.StarterGui:SetCore("SendNotification", {
+        	Title = NTitle;
+       		Text = NText;
+      		Duration = tostring(NDuration);
+    	})
   end,
 }
 
