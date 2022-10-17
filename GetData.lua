@@ -2,9 +2,10 @@
 
 local Data = {}
 
-Data.Invite = "https://discord.gg/wX2D4Ea2Y8"
-
-Data.InviteTag = "wX2D4Ea2Y8"
+Data.Server = {
+  InviteTag = "wX2D4Ea2Y8",
+  Invite = "https://discord.gg/wX2D4Ea2Y8"
+}
 
 Data.Devs = {
 LynX = "LynXz#5995",
@@ -14,5 +15,5 @@ return Data
 
 --[[
 local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
-print(Data.Profile)
+print(Data.Server.Invite)
 ]]--
