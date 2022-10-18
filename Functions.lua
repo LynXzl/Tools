@@ -30,6 +30,10 @@ local Functions = {
 	     return SelectedPlayer
 	end
   end,
+  --Gets Root Part Position
+  GetRootPos = function(name)
+  	return game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position
+  end,
 }
 
 return Functions
@@ -37,4 +41,5 @@ return Functions
 --[[
 local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/Functions.lua"))()
 Functions:Notify("Hello Guys","I think it works","5")
+warn(Functions:GetRootPos())
 ]]--
