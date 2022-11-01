@@ -1,3 +1,5 @@
+local Data = loadstring(game:HttpGet("https://raw.githubusercontent.com/LynXzl/Tools/main/GetData.lua"))()
+
 --Functions
 
 local Functions = {
@@ -33,6 +35,24 @@ local Functions = {
   --Gets Root Part Position
   GetRootPos = function(name)
   	return game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position
+  end,
+  AutoJoinDiscord = function(name)
+  	local req = request or syn and syn.request
+	req({
+		Url = "http://127.0.0.1:6463/rpc?v=1",
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json",
+			["Origin"] = "https://discord.com"
+		},
+		Body = game:GetService("HttpService"):JSONEncode({
+			cmd = "INVITE_BROWSER",
+			args = {
+				code = Data.Server.InviteTag
+			},
+			nonce = game:GetService("HttpService"):GenerateGUID(false)
+		}),
+	})
   end,
 }
 
