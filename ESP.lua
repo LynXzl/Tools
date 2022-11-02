@@ -1,7 +1,6 @@
-_G.ESPColor = nil
 _G.WRDESPEnabled = nil 
 _G.WRDESPBoxes = nil 
-_G.WRDESPTeamColors = nil 
+_G.WRDESPTeamColors = true 
 _G.WRDESPTracers = nil 
 _G.WRDESPNames = nil
 
@@ -11,7 +10,7 @@ if not _G.WRDESPLoaded then
         Boxes = true,
         BoxShift = CFrame.new(0,-1.5,0),
         BoxSize = Vector3.new(4,6,0),
-        Color = ESPColor,
+        Color = Color3.fromRGB(0,0,0),
         FaceCamera = false,
         Names = true,
         TeamColor = true,
