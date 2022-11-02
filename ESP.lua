@@ -1,16 +1,19 @@
-_G.WRDESPEnabled = nil 
-_G.WRDESPBoxes = nil 
-_G.WRDESPTeamColors = true 
-_G.WRDESPTracers = nil 
-_G.WRDESPNames = nil
+_G.WRDESPEnabled = false --Enables the ESP (Defaults to true)
+_G.WRDESPBoxes = false --Draws boxes around other players (Defaults to true)
+_G.WRDESPTeamColors = true --Distinguish different teams by their team color. If the game sets one. (Defaults to true)
+_G.WRDESPTracers = false --Displays lines leading to other players (Defaults to false)
+_G.WRDESPNames = false --Displays the names of the players within the ESP box (Defaults to true)
 
 if not _G.WRDESPLoaded then    
+    ----[[ First- Load Kiriot ESP Library ]]----
+
+    --Settings--
     local ESP = {
         Enabled = false,
         Boxes = true,
         BoxShift = CFrame.new(0,-1.5,0),
         BoxSize = Vector3.new(4,6,0),
-        Color = Color3.fromRGB(0,0,0),
+        Color = Color3.fromRGB(255, 170, 0),
         FaceCamera = false,
         Names = true,
         TeamColor = true,
@@ -394,7 +397,6 @@ if not _G.WRDESPLoaded then
     if _G.WRDESPTeamColors == nil then _G.WRDESPTeamColors = true end
     if _G.WRDESPTracers == nil then _G.WRDESPTracers = false end
     if _G.WRDESPNames == nil then _G.WRDESPNames = true end
-    if _G.ESPColor == nil then _G.ESPColor = Color3.fromRGB(255, 170, 0) end
 	
 	--Hacky way to keep up with setting changes
     while wait(.1) do
