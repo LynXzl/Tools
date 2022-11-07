@@ -10,7 +10,9 @@ Data.Server = {
 Data.Devs = {
 LynX = "LynXz#5995",
 Nuker = "Nuker#1488",
-Margman = "Margman#6353"
+Margman = "Margman#6353",
+Suspect = "Suspect#8999",
+IshowSpeed = "ishowspeed#7816"
 }
 
 return Data
