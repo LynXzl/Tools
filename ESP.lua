@@ -1,17 +1,3 @@
---[[
-A distribution of https://wearedevs.net/scripts
-Created August 17, 2021, Last updated August 17, 2021
-
-Description: Draws boxes around each player.
-
-Credits to "Real Panda" for their ESP library
-
-Instruction: Edit the settings as desired below and execute the script.
-
-Settings: 
-Replace "nil" with "true" to enable the setting, or "false" to disable the setting. Without the quotes. 
-If you do not change "nil", the defaults will take place.
-]]
 _G.WRDESPEnabled = false --Enables the ESP (Defaults to true)
 _G.WRDESPBoxes = false --Draws boxes around other players (Defaults to true)
 _G.WRDESPTeamColors = true --Distinguish different teams by their team color. If the game sets one. (Defaults to true)
@@ -30,7 +16,7 @@ if not _G.WRDESPLoaded then
         Boxes = true,
         BoxShift = CFrame.new(0,-1.5,0),
         BoxSize = Vector3.new(4,6,0),
-        Color = Color3.fromRGB(255, 170, 0),
+        Color = Color3.fromRGB(22, 168, 76),
         FaceCamera = false,
         Names = true,
         TeamColor = true,
