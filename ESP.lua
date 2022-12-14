@@ -16,7 +16,7 @@ if not _G.WRDESPLoaded then
         Boxes = true,
         BoxShift = CFrame.new(0,-1.5,0),
         BoxSize = Vector3.new(4,6,0),
-        Color = Color3.fromRGB(22, 168, 76),
+        Color = Color3.fromRGB(235, 55, 23),
         FaceCamera = false,
         Names = true,
         TeamColor = true,
