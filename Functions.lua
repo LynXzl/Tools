@@ -34,7 +34,7 @@ local Functions = {
   end,
   --Gets Root Part Position
   GetRootPos = function(name)
-  	return game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position
+  	return game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
   end,
   AutoJoinDiscord = function(name)
   	local req = request or syn and syn.request
