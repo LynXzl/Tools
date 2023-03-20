@@ -3,12 +3,12 @@
 local Data = {}
 
 Data.Server = {
-  InviteTag = "wX2D4Ea2Y8",
-  Invite = "https://discord.gg/wX2D4Ea2Y8"
+  InviteTag = "WjSeCmWFxZ",
+  Invite = "https://discord.gg/WjSeCmWFxZ"
 }
 
 Data.Devs = {
-LynX = "LynXz#5995",
+LynX = "LynXzl#5995",
 Nuker = "Nuker#8945",
 Margman = "Margman#6353",
 Suspect = "Suspect#8999",
